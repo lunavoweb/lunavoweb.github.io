@@ -1238,7 +1238,10 @@
             const message = document.getElementById('message').value;
             
             // Create email body
-            const emailBody = `Name: ${name}%0D%0AEmail: ${email}%0D%0ASubject: ${subject}%0D%0AMessage: ${message}`;
+            const emailBody = `Name: ${name}
+            Email: ${email}
+            Subject: ${subject}
+            Message: ${message}`;
             
             // Open default email client
             window.open(`mailto:lunavoweb@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`);
